@@ -10,28 +10,28 @@ The goal of this task is to identify sentiment polarity of the code-mixed datase
 # Dataset
  There are 3 types of datasets for Tamil-English mixed text collected from Youtube given by competition organizers.
        1. Training set 
-       1. Validation set 
-       1. Test set 
+       2. Validation set 
+       3. Test set 
       
   Totally,15744 comments are available. From this, Training set contains 11,335 comments , Validation set contains 1,260 comments and Test set contains 3,149 comments. All comments are divided into 5 types of classes / labels. Which are,
         1. not-Tamil
-        1. unknown_state
-        1. Positive
-        1. Mixed_feelings
-        1. Negative
+        2. unknown_state
+        3. Positive
+        4. Mixed_feelings
+        5. Negative
 
 # Our Submissions
  We develped the Machine learning , Deep learning and Ensemble methodology ( Max voting ) based classifiers for the Tamil-English Mixed data.
  
  This repo contains two IPython Notebooks which are containing the code for develop the classifiers to the challenge. 
         1. Sentimental analysis using LSTM.ipynb
-        1. Sentimental analysis using ML and Ensemble.ipynb
+        2. Sentimental analysis using ML and Ensemble.ipynb
   
-   # 1. Sentimental analysis using LSTM.ipynb
-       This notebook contains the code for reading the dataset,preprocessing of comments , **creating custom word embedding** , creating __LSTM model__  , training and predicting the  labels of the test data.     
+  # 1. Sentimental analysis using LSTM.ipynb
+   This notebook contains the code for reading the dataset,preprocessing of comments , creating custom word embedding , creating LSTM model , training and predicting the  labels of the test data.     
 
-   # 2. Sentimental analysis using ML and Ensemble.ipynb
-       This notebook contains the code for reading the dataset,preprocessing of comments , creating **TF-IDF vectors**, creating __Machine learning models (Naive Bayes , Decision tree, Random Forest ,AdaBoost+Decision Tree)/ Ensemble model ( Max voting of 4 ML classifiers)__ , training and predicting the labels of the test data.
+  # 2. Sentimental analysis using ML and Ensemble.ipynb
+   This notebook contains the code for reading the dataset,preprocessing of comments , creating TF-IDF vectors, creating Machine learning models (Naive Bayes , Decision tree, Random Forest ,AdaBoost+Decision Tree)/ Ensemble model ( Max voting of 4 ML classifiers) , training and predicting the labels of the test data.
 
 # Results
    Naive Bayes classifier achieves the highest weighted average F1-score 0.61 compare than our other classifiers and got 5th rank in the leaderboard.
